@@ -1,0 +1,218 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>201117-tadaA-report | yang's blog</title><meta name="description" content="Overview of datasets1df3    A data.frame: 8 × 11      Grouporg_countorg_percentfiltered_countfiltered_percentannovar_obsannovar_obs_percentbg_af_calibrburden_afbg_bf_calibrburden_bf     &lt;chr&gt;&amp;lt"><meta name="author" content=""><meta name="copyright" content=""><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/project/img/favicon.png"><link rel="canonical" href="https://yfu1116.github.io/project/201117-tadaA-report/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="article"><meta property="og:title" content="201117-tadaA-report"><meta property="og:url" content="https://yfu1116.github.io/project/201117-tadaA-report/"><meta property="og:site_name" content="yang's blog"><meta property="og:description" content="Overview of datasets1df3    A data.frame: 8 × 11      Grouporg_countorg_percentfiltered_countfiltered_percentannovar_obsannovar_obs_percentbg_af_calibrburden_afbg_bf_calibrburden_bf     &lt;chr&gt;&amp;lt"><meta property="og:image" content="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg"><meta property="article:published_time" content="2020-11-17T13:01:07.721Z"><meta property="article:modified_time" content="2020-11-17T13:01:43.597Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'false'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/project/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/project/',
+  hexoversion: '4.0.0',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  bookmark: {
+    message_prev: 'Press',
+    message_next: 'to bookmark this page'
+  },
+  runtime_unit: 'days',
+  runtime: false,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false    
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: true,
+  postUpdate: '2020-11-17 21:01:43'
+}</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript></head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/project/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/project/archives/"><div class="headline">Articles</div><div class="length_num">31</div></a></div></div></div><hr/></div></div><div id="body-wrap"><div id="sidebar"><i class="fas fa-arrow-right on" id="toggle-sidebar"></i><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Overview-of-datasets"><span class="toc-number">1.</span> <span class="toc-text">Overview of datasets</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Mutation-rate-calibration"><span class="toc-number">2.</span> <span class="toc-text">Mutation rate calibration</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#RR-estimated-separately-and-in-paper"><span class="toc-number">3.</span> <span class="toc-text">RR estimated separately and in paper</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#number-of-risk-gene"><span class="toc-number">4.</span> <span class="toc-text">number of risk gene</span></a></li></ol></div></div></div><header class="post-bg" id="page-header" style="background-image: url(https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/project/">yang's blog</a></span><span class="pull-right menus"><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">201117-tadaA-report</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2020-11-17T13:01:07.721Z" title="Created 2020-11-17 21:01:07">2020-11-17</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2020-11-17T13:01:43.597Z" title="Updated 2020-11-17 21:01:43">2020-11-17</time></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><h3 id="Overview-of-datasets"><a href="#Overview-of-datasets" class="headerlink" title="Overview of datasets"></a>Overview of datasets</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df3</span><br></pre></td></tr></table></figure>
+
+
+<table>
+<caption>A data.frame: 8 × 11</caption>
+<thead>
+    <tr><th scope="col">Group</th><th scope="col">org_count</th><th scope="col">org_percent</th><th scope="col">filtered_count</th><th scope="col">filtered_percent</th><th scope="col">annovar_obs</th><th scope="col">annovar_obs_percent</th><th scope="col">bg_af_calibr</th><th scope="col">burden_af</th><th scope="col">bg_bf_calibr</th><th scope="col">burden_bf</th></tr>
+    <tr><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>PTV_Highest(pLI=0.995-1) </td><td>366 </td><td>5.13  </td><td>289 </td><td>  4.69</td><td> 150</td><td>  3.14</td><td>  52</td><td>2.8846</td><td> 111</td><td>1.3514</td></tr>
+    <tr><td>PTV_Middle(pLI=0.5-0.995)</td><td>164 </td><td>2.30  </td><td>122 </td><td>  1.98</td><td>  48</td><td>  1.00</td><td>  75</td><td>0.6400</td><td>  36</td><td>1.3333</td></tr>
+    <tr><td>PTV_Lowest(pLI=0-0.5)    </td><td>442 </td><td>6.20  </td><td>313 </td><td>  5.08</td><td> 156</td><td>  3.26</td><td> 203</td><td>0.7685</td><td> 116</td><td>1.3448</td></tr>
+    <tr><td>Missense_Highest(MPC≥2) </td><td>354 </td><td>4.96  </td><td>323 </td><td>  5.24</td><td> 181</td><td>  3.79</td><td> 208</td><td>0.8702</td><td> 134</td><td>1.3507</td></tr>
+    <tr><td>Missense_Middle(MPC=1-2) </td><td>894 </td><td>12.54 </td><td>789 </td><td> 12.80</td><td> 584</td><td> 12.22</td><td> 677</td><td>0.8626</td><td> 433</td><td>1.3487</td></tr>
+    <tr><td><span style="white-space:pre-wrap">Missense_Lowest(MPC&lt;1)   </span></td><td>3155</td><td>44.24 </td><td>2804</td><td> 45.48</td><td>2221</td><td> 46.45</td><td>2774</td><td>0.8006</td><td>1646</td><td>1.3493</td></tr>
+    <tr><td>Synonymous               </td><td>1756</td><td>24.62 </td><td>1526</td><td> 24.75</td><td>1441</td><td> 30.14</td><td>1441</td><td>1.0000</td><td>1068</td><td>1.3493</td></tr>
+    <tr><td>Total                    </td><td>7131</td><td>100.00</td><td>6166</td><td>100.00</td><td>4781</td><td>100.00</td><td>  NA</td><td>    NA</td><td>  NA</td><td>    NA</td></tr>
+</tbody>
+</table>
+
+
+
+<p><strong>org: dataset from the paper</strong></p>
+<ul>
+<li>7131 DNMs from 6430 affected individuals</li>
+<li>protein-coding autosomal</li>
+<li>syn + Mis + PTV (‘splice_donor_variant’, ‘splice_acceptor_variant’, ‘stop_gained’, ‘frameshift_variant’)</li>
+</ul>
+<p><strong>filter: dataset used in our model</strong></p>
+<ul>
+<li>6166 DNMs filtered from the 7131 DNMs</li>
+<li>filter criteria<ul>
+<li>within our coding windows</li>
+<li>variant type of ALT should be SNV</li>
+</ul>
+</li>
+<li>sample size = 4059</li>
+</ul>
+<p><strong>Annotations used in that paper were annotated by VEP, whereas ours were from ANNOVAR, which may render RR different. It will take a few more days to get VEP annotations.</strong></p>
+<p><strong>bg_af(bf)_calibr:</strong> the expected number of background mutations after (before) calibration    </p>
+<p>$burden = \frac{annovar_obs}{annovar_background}$</p>
+<p><strong>I’m currently confused by the burden which is less than 1.</strong></p>
+<h3 id="Mutation-rate-calibration"><a href="#Mutation-rate-calibration" class="headerlink" title="Mutation rate calibration"></a>Mutation rate calibration</h3><ul>
+<li>calibrate using synonymous mutations (n_DNM = 6166，n_sample = 4059)<ul>
+<li>the expected number of background synonymous mutations is 1068, while the observed one is 1441</li>
+<li>supposed burden = 1, then took 1441/1068 as a scaling factor to perform calibration</li>
+</ul>
+</li>
+</ul>
+<h3 id="RR-estimated-separately-and-in-paper"><a href="#RR-estimated-separately-and-in-paper" class="headerlink" title="RR estimated separately and in paper"></a>RR estimated separately and in paper</h3><ul>
+<li>RR separately estimated from our model (the first 4 columns)</li>
+<li>RR reported in that paper (the last 2 columns)</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rr2</span><br></pre></td></tr></table></figure>
+
+
+<table>
+<caption>A data.frame: 7 × 7</caption>
+<thead>
+    <tr><th scope="col">logRR</th><th scope="col">lower_bound</th><th scope="col">upper_bound</th><th scope="col">RR</th><th scope="col">annota</th><th scope="col">RR_paper</th><th scope="col">logRR_paper</th></tr>
+    <tr><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>0.1557098</td><td>-2.765621</td><td>3.077041</td><td> 1.168487</td><td>annovar_syn           </td><td> 1.126390</td><td>0.119018</td></tr>
+    <tr><td>2.3474430</td><td> 2.113385</td><td>2.581501</td><td>10.458792</td><td><span style="white-space:pre-wrap">annovar_MPC&gt;=2        </span></td><td>22.149989</td><td>3.097837</td></tr>
+    <tr><td>1.4654350</td><td> 1.200204</td><td>1.730666</td><td> 4.329426</td><td><span style="white-space:pre-wrap">annovar_1&lt;=MPC&lt;2      </span></td><td> 4.179995</td><td>1.430310</td></tr>
+    <tr><td>1.2471260</td><td> 1.107593</td><td>1.386660</td><td> 3.480326</td><td><span style="white-space:pre-wrap">annovar_0&lt;=MPC&lt;1      </span></td><td><span style="white-space:pre-wrap">       NA</span></td><td><span style="white-space:pre-wrap">      NA</span></td></tr>
+    <tr><td>3.1838690</td><td> 2.913624</td><td>3.454113</td><td>24.139971</td><td><span style="white-space:pre-wrap">annovar_pLI&gt;=0.995    </span></td><td>50.560417</td><td>3.923169</td></tr>
+    <tr><td>2.2840890</td><td> 1.732580</td><td>2.835598</td><td> 9.816739</td><td>annovar_0.5&gt;=pLI&gt;0.995</td><td> 6.836726</td><td>1.922309</td></tr>
+    <tr><td>1.7402540</td><td> 1.241026</td><td>2.239483</td><td> 5.698791</td><td><span style="white-space:pre-wrap">annovar_0&gt;=pLI&gt;0.5    </span></td><td><span style="white-space:pre-wrap">       NA</span></td><td><span style="white-space:pre-wrap">      NA</span></td></tr>
+</tbody>
+</table>
+
+
+
+<h3 id="number-of-risk-gene"><a href="#number-of-risk-gene" class="headerlink" title="number of risk gene"></a>number of risk gene</h3><ul>
+<li>paper:  65 genes</li>
+<li>our model: 40 genes</li>
+</ul>
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined" target="_blank" rel="noopener"></a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://yfu1116.github.io/project/201117-tadaA-report/">https://yfu1116.github.io/project/201117-tadaA-report/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" data-sites="github,email,facebook,twitter,weixin,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/project/201113-6166DNM-4059fam-sf-1441_d_1068-ccr-pli-splidex-mis/"><img class="next-cover" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="onerror=null;src='/project/img/404.jpg'"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">201113-6166DNM-4059fam-sf-1441_d_1068-ccr-pli-splidex-mis</div></div></a></div></nav></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By </div><div class="framework-info"><span>Framework </span><a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener">Butterfly</a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="font_plus" type="button" title="Increase Font Size"><i class="fas fa-plus"></i></button><button id="font_minus" type="button" title="Decrease Font Size"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></section><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/project/js/utils.js"></script><script src="/project/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    loader: {
+      source: {
+        '[tex]/amsCd': '[tex]/amscd'
+      }
+    },
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, '']
+      }
+    }
+  }
+  
+  var script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></div></body></html>
