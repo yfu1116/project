@@ -1,0 +1,269 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>2021-03-25-optim-multi-scalar-pi-gama | yang's blog</title><meta name="description" content="123456# compact_data = readRDS(&quot;&#x2F;storage11_7T&#x2F;fuy&#x2F;TADA-A&#x2F;annotation&#x2F;spliceai&#x2F;2021-03-15_spliceai_DS_AG_6788SNV_sf_uni_prior_compact.rds&quot;)compact_data = readRDS(&quot;&#x2F;storage11_7T&#x2F;fuy&#x2F;TADA-A"><meta name="author" content=""><meta name="copyright" content=""><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/project/img/favicon.png"><link rel="canonical" href="https://yfu1116.github.io/project/2021-03-25-optim-multi-scalar-pi-gama/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="article"><meta property="og:title" content="2021-03-25-optim-multi-scalar-pi-gama"><meta property="og:url" content="https://yfu1116.github.io/project/2021-03-25-optim-multi-scalar-pi-gama/"><meta property="og:site_name" content="yang's blog"><meta property="og:description" content="123456# compact_data = readRDS(&quot;&#x2F;storage11_7T&#x2F;fuy&#x2F;TADA-A&#x2F;annotation&#x2F;spliceai&#x2F;2021-03-15_spliceai_DS_AG_6788SNV_sf_uni_prior_compact.rds&quot;)compact_data = readRDS(&quot;&#x2F;storage11_7T&#x2F;fuy&#x2F;TADA-A"><meta property="og:image" content="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg"><meta property="article:published_time" content="2021-03-29T01:22:09.873Z"><meta property="article:modified_time" content="2021-03-29T01:22:20.762Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'false'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/project/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/project/',
+  hexoversion: '4.0.0',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  bookmark: {
+    message_prev: 'Press',
+    message_next: 'to bookmark this page'
+  },
+  runtime_unit: 'days',
+  runtime: false,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false    
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: false,
+  postUpdate: '2021-03-29 09:22:20'
+}</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript></head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/project/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/project/archives/"><div class="headline">Articles</div><div class="length_num">38</div></a></div></div></div><hr/></div></div><div id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/project/">yang's blog</a></span><span class="pull-right menus"><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">2021-03-25-optim-multi-scalar-pi-gama</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-03-29T01:22:09.873Z" title="Created 2021-03-29 09:22:09">2021-03-29</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2021-03-29T01:22:20.762Z" title="Updated 2021-03-29 09:22:20">2021-03-29</time></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># compact_data = readRDS(&quot;/storage11_7T/fuy/TADA-A/annotation/spliceai/2021-03-15_spliceai_DS_AG_6788SNV_sf_uni_prior_compact.rds&quot;)</span><br><span class="line">compact_data = readRDS(&quot;/storage11_7T/fuy/TADA-A/cell_WES/DNM/2021-01-19cp6_all_gene_PO_6788SNV_sf_uni_prior_compact.rds&quot;)</span><br><span class="line">data=compact_data$base_info</span><br><span class="line"></span><br><span class="line">gene_prior_file = &quot;/storage11_7T/fuy/TADA-A/db/MS_data/prior/new_uniform_gene_prior.txt&quot;</span><br><span class="line">optimization_iteration = 2000</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">library(Rcpp)</span><br><span class="line">sourceCpp(file=&quot;/storage11_7T/fuy/TADA-A/cell_WES/DNM/ll_sum.cpp&quot;)</span><br><span class="line">sourceCpp(file=&quot;/storage11_7T/fuy/TADA-A/cell_WES/DNM/multi_annota.cpp&quot;)</span><br><span class="line">sourceCpp(file=&quot;/storage11_7T/fuy/TADA-A/cell_WES/DNM/post.cpp&quot;)</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">library(data.table)</span><br><span class="line">gene_prior = fread(&quot;/storage11_7T/fuy/TADA-A/db/MS_data/prior/new_uniform_gene_prior.txt&quot;)</span><br><span class="line">gene_prior = gene_prior[order(gene_prior$genename),]</span><br><span class="line">selected_annotations = c(1)</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a = c(0.1,.05)</span><br><span class="line">tmm = proc.time()</span><br><span class="line">gama = optim(a, fr_pi ,control=list(&quot;fnscale&quot;=-1, &quot;maxit&quot; = optimization_iteration))$par</span><br><span class="line">gama</span><br><span class="line">proc.time() - tmm</span><br></pre></td></tr></table></figure>
+
+
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class="list-inline"><li>0.255723407377646</li><li>0.999829134189715</li></ol>
+
+
+
+
+<pre><code>   user  system elapsed 
+338.867   0.072 297.475 </code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">297/60</span><br></pre></td></tr></table></figure>
+
+
+<p>4.95</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a = c(exp(1),.05)</span><br><span class="line">tmm = proc.time()</span><br><span class="line">gama = optim(a, fr_pi ,control=list(&quot;fnscale&quot;=-1, &quot;maxit&quot; = optimization_iteration))$par</span><br><span class="line">gama</span><br><span class="line">proc.time() - tmm</span><br></pre></td></tr></table></figure>
+
+
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class="list-inline"><li>1.89123499319297</li><li>0.0504755152875449</li></ol>
+
+
+
+
+<pre><code>   user  system elapsed 
+283.513   0.127 248.781 </code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a = c(exp(1),.9)</span><br><span class="line">tmm = proc.time()</span><br><span class="line">gama = optim(a, fr_pi ,control=list(&quot;fnscale&quot;=-1, &quot;maxit&quot; = optimization_iteration))$par</span><br><span class="line">gama</span><br><span class="line">proc.time() - tmm</span><br></pre></td></tr></table></figure>
+
+
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class="list-inline"><li>1.89459951460619</li><li>0.050258497374786</li></ol>
+
+
+
+
+<pre><code>   user  system elapsed 
+291.112   0.080 257.158 </code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">selected_annotations = c(1)</span><br><span class="line">a = c(.1,.05)</span><br><span class="line">tmm = proc.time()</span><br><span class="line">gama = optim(a, fr_pi ,control=list(&quot;fnscale&quot;=-1, &quot;maxit&quot; = optimization_iteration))$par</span><br><span class="line">gama</span><br><span class="line">proc.time() - tmm</span><br></pre></td></tr></table></figure>
+
+
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class="list-inline"><li>0.255723407377646</li><li>0.999829134189715</li></ol>
+
+
+
+
+<pre><code>   user  system elapsed 
+354.290   0.116 313.294 </code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">gene_prior = fread(&quot;/storage11_7T/fuy/TADA-A/db/MS_data/prior/new_uniform_gene_prior.txt&quot;)</span><br><span class="line">gene_prior = gene_prior[order(gene_prior$genename),]</span><br><span class="line"></span><br><span class="line">fr &lt;- function(x)&#123;</span><br><span class="line">all_rr = x</span><br><span class="line"></span><br><span class="line">logP_Zg0 = sumall0(data)</span><br><span class="line">logP_Zg1 = sumall1(data,selected_annotations,all_rr)</span><br><span class="line"></span><br><span class="line">logP_table&lt;-data.table(logP_Zg1 = logP_Zg1, logP_Zg0 = logP_Zg0, genename = names(data))</span><br><span class="line">logP_table &lt;- logP_table[gene_prior, on = &quot;genename&quot;]</span><br><span class="line">logP_table &lt;- logP_table[complete.cases(logP_table)]</span><br><span class="line">idx = match(unique(logP_table$genename),logP_table$genename)</span><br><span class="line">idx2 = c(idx,nrow(logP_table) + 1)</span><br><span class="line">pr = logP_table[idx,]$prior</span><br><span class="line">ll_sum1 &lt;- ll_sum(idx2,logP_table$logP_Zg1,logP_table$logP_Zg0,pr)</span><br><span class="line">ll_sum1 </span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">selected_annotations = seq(1,2)</span><br><span class="line">tmm = proc.time()</span><br><span class="line"></span><br><span class="line">gama = optim(rep(exp(1), 2), fr ,control=list(&quot;fnscale&quot;=-1, &quot;maxit&quot; = optimization_iteration), hessian = TRUE)$par</span><br><span class="line"></span><br><span class="line">proc.time() - tmm</span><br><span class="line"></span><br><span class="line">gama</span><br></pre></td></tr></table></figure>
+
+
+<pre><code>   user  system elapsed 
+449.122   0.208 412.240 </code></pre><style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class="list-inline"><li>1.19516468584344</li><li>1.6678512493307</li></ol>
+
+
+
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">logP_Zg0 = sumall0(data)</span><br><span class="line"></span><br><span class="line">fr_pi &lt;- function(par)&#123;</span><br><span class="line"></span><br><span class="line">    all_rr = par[1:length(selected_annotations)] </span><br><span class="line">    gene_prior$prior &lt;- rep(par[length(par)],nrow(gene_prior))</span><br><span class="line">    </span><br><span class="line">    logP_Zg1 = sumall1(data,selected_annotations,all_rr)</span><br><span class="line"></span><br><span class="line">    logP_table&lt;-data.table(logP_Zg1 = logP_Zg1, logP_Zg0 = logP_Zg0, genename = names(data))</span><br><span class="line">    logP_table &lt;- logP_table[gene_prior, on = &quot;genename&quot;]</span><br><span class="line">    logP_table &lt;- logP_table[complete.cases(logP_table)]</span><br><span class="line">    idx = match(unique(logP_table$genename),logP_table$genename)</span><br><span class="line">    idx2 = c(idx,nrow(logP_table) + 1)</span><br><span class="line">    pr = logP_table[idx,]$prior</span><br><span class="line">    ll_sum1 &lt;- ll_sum(idx2,logP_table$logP_Zg1,logP_table$logP_Zg0,pr)</span><br><span class="line">    ll_sum1 </span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">selected_annotations = seq(1,2)</span><br><span class="line">tmm = proc.time()</span><br><span class="line"></span><br><span class="line">gama = optim(c(exp(1),exp(1),.05), fr_pi ,control=list(&quot;fnscale&quot;=-1, &quot;maxit&quot; = optimization_iteration))$par</span><br><span class="line"></span><br><span class="line">proc.time() - tmm</span><br><span class="line"></span><br><span class="line">gama</span><br></pre></td></tr></table></figure>
+
+
+<pre><code>   user  system elapsed 
+540.017   0.233 478.671 </code></pre><style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class="list-inline"><li>1.09919237592268</li><li>1.49613778568841</li><li>0.076776311502852</li></ol>
+
+
+
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">selected_annotations = seq(1,2)</span><br><span class="line">tmm = proc.time()</span><br><span class="line"></span><br><span class="line">gama = optim(c(.1,.1,.05), fr_pi ,control=list(&quot;fnscale&quot;=-1, &quot;maxit&quot; = optimization_iteration))$par</span><br><span class="line"></span><br><span class="line">proc.time() - tmm</span><br><span class="line"></span><br><span class="line">gama</span><br></pre></td></tr></table></figure>
+
+
+<pre><code>   user  system elapsed 
+940.195   0.363 832.371 </code></pre><style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class="list-inline"><li>1.10186122803905</li><li>1.5013327085674</li><li>0.0764190730631155</li></ol>
+
+
+
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">gene_prior = fread(&quot;/storage11_7T/fuy/TADA-A/db/MS_data/prior/new_uniform_gene_prior.txt&quot;)</span><br><span class="line">gene_prior = gene_prior[order(gene_prior$genename),]</span><br><span class="line">gene_prior$prior = rep(0.0764190730631155,nrow(gene_prior))</span><br><span class="line"></span><br><span class="line">post_fr &lt;- function(x)&#123;</span><br><span class="line">    all_rr = x</span><br><span class="line">    logP_Zg1 = sumall1(data,selected_annotations,all_rr)   </span><br><span class="line">    logP_table&lt;-data.table(logP_Zg1 = logP_Zg1, logP_Zg0 = logP_Zg0, genename = names(data))</span><br><span class="line">    logP_table &lt;- logP_table[gene_prior, on = &quot;genename&quot;]</span><br><span class="line">    logP_table &lt;- logP_table[complete.cases(logP_table)]</span><br><span class="line">    u = unique(logP_table$genename)</span><br><span class="line">    idx = match(u,logP_table$genename)</span><br><span class="line">    idx2 = c(idx,nrow(logP_table) + 1)</span><br><span class="line">    pr = logP_table[idx,]$prior </span><br><span class="line">    post = post(idx2,logP_table$logP_Zg1,logP_table$logP_Zg0,pr)</span><br><span class="line">    post.dt = data.table(genename =u,prior = post )   </span><br><span class="line">    post.dt</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">max(mm$prior)</span><br></pre></td></tr></table></figure>
+
+
+<p>0.36704126967405</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">all_rr = c(1.19516468584344,1.6678512493307)</span><br><span class="line">selected_annotations = c(1,2)</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">logP_Zg1 = sumall1(data,selected_annotations,all_rr)</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">logP_table&lt;-data.table(logP_Zg1 = logP_Zg1, logP_Zg0 = logP_Zg0, genename = names(data))</span><br><span class="line">    logP_table &lt;- logP_table[gene_prior, on = &quot;genename&quot;]</span><br><span class="line">    logP_table &lt;- logP_table[complete.cases(logP_table)]</span><br><span class="line">    u = unique(logP_table$genename)</span><br><span class="line">    idx = match(u,logP_table$genename)</span><br><span class="line">    idx2 = c(idx,nrow(logP_table) + 1)</span><br><span class="line">    pr = rep(0.05,length(idx))</span><br><span class="line">    post = post(idx2,logP_table$logP_Zg1,logP_table$logP_Zg0,pr)</span><br></pre></td></tr></table></figure>
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined" target="_blank" rel="noopener"></a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://yfu1116.github.io/project/2021-03-25-optim-multi-scalar-pi-gama/">https://yfu1116.github.io/project/2021-03-25-optim-multi-scalar-pi-gama/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" data-sites="github,email,facebook,twitter,weixin,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/project/2021-03-25-optim-update-posterior-pi/"><img class="next-cover" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="onerror=null;src='/project/img/404.jpg'"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">2021-03-25-optim-update-posterior-pi</div></div></a></div></nav></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By </div><div class="framework-info"><span>Framework </span><a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener">Butterfly</a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="font_plus" type="button" title="Increase Font Size"><i class="fas fa-plus"></i></button><button id="font_minus" type="button" title="Decrease Font Size"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></section><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/project/js/utils.js"></script><script src="/project/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    loader: {
+      source: {
+        '[tex]/amsCd': '[tex]/amscd'
+      }
+    },
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, '']
+      }
+    }
+  }
+  
+  var script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></div></body></html>
