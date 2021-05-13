@@ -1,0 +1,165 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>2021-05-13-indel+snv-novel-GO | yang's blog</title><meta name="description" content="12library(data.table)fread(&quot;&#x2F;storage11_7T&#x2F;fuy&#x2F;TADA-A&#x2F;CHD&#x2F;indel_rate&#x2F;indel+snv_novel_GO.lst&quot;)[,-7]    A data.table: 13 × 14      MyListGene SymbolDescriptionBiological Process (GO)Cellular Co"><meta name="author" content=""><meta name="copyright" content=""><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/project/img/favicon.png"><link rel="canonical" href="https://yfu1116.github.io/project/2021-05-13-indel+snv-novel-GO/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="article"><meta property="og:title" content="2021-05-13-indel+snv-novel-GO"><meta property="og:url" content="https://yfu1116.github.io/project/2021-05-13-indel+snv-novel-GO/"><meta property="og:site_name" content="yang's blog"><meta property="og:description" content="12library(data.table)fread(&quot;&#x2F;storage11_7T&#x2F;fuy&#x2F;TADA-A&#x2F;CHD&#x2F;indel_rate&#x2F;indel+snv_novel_GO.lst&quot;)[,-7]    A data.table: 13 × 14      MyListGene SymbolDescriptionBiological Process (GO)Cellular Co"><meta property="og:image" content="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg"><meta property="article:published_time" content="2021-05-13T06:48:24.614Z"><meta property="article:modified_time" content="2021-05-13T06:48:44.948Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'false'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/project/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/project/',
+  hexoversion: '4.0.0',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  bookmark: {
+    message_prev: 'Press',
+    message_next: 'to bookmark this page'
+  },
+  runtime_unit: 'days',
+  runtime: false,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false    
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: false,
+  postUpdate: '2021-05-13 14:48:44'
+}</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript></head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/project/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/project/archives/"><div class="headline">Articles</div><div class="length_num">59</div></a></div></div></div><hr/></div></div><div id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/project/">yang's blog</a></span><span class="pull-right menus"><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">2021-05-13-indel+snv-novel-GO</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-05-13T06:48:24.614Z" title="Created 2021-05-13 14:48:24">2021-05-13</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2021-05-13T06:48:44.948Z" title="Updated 2021-05-13 14:48:44">2021-05-13</time></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">library(data.table)</span><br><span class="line">fread(&quot;/storage11_7T/fuy/TADA-A/CHD/indel_rate/indel+snv_novel_GO.lst&quot;)[,-7]</span><br></pre></td></tr></table></figure>
+
+
+<table>
+<caption>A data.table: 13 × 14</caption>
+<thead>
+    <tr><th scope="col">MyList</th><th scope="col">Gene Symbol</th><th scope="col">Description</th><th scope="col">Biological Process (GO)</th><th scope="col">Cellular Component (GO)</th><th scope="col">Molecular Function (GO)</th><th scope="col">GO:0008134 transcription factor binding</th><th scope="col">GO:0009791 post-embryonic development</th><th scope="col">GO:0009953 dorsal/ventral pattern formati</th><th scope="col">GO:0061640 cytoskeleton-dependent cytokin</th><th scope="col">GO:0140285 endosome fission</th><th scope="col">GO:0010724 regulation of definitive eryth</th><th scope="col">GO:0002060 purine nucleobase binding</th><th scope="col">GO:0032286 central nervous system myelin</th></tr>
+    <tr><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>MYRF    </td><td>MYRF    </td><td>myelin regulatory factor                      </td><td>GO:0032286 central nervous system myelin maintenance;GO:0043217 myelin maintenance;GO:0031643 positive regulation of myelination                                                                                                           </td><td>GO:0005789 endoplasmic reticulum membrane;GO:0098827 endoplasmic reticulum subcompartment;GO:0042175 nuclear outer membrane-endoplasmic reticulum membrane network</td><td>GO:0008233 peptidase activity;GO:0000981 DNA-binding transcription factor activity, RNA polymerase II-specific;GO:0003700 DNA-binding transcription factor activity                          </td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+    <tr><td>LZTR1   </td><td>LZTR1   </td><td>leucine zipper like transcription regulator 1 </td><td>GO:0046580 negative regulation of Ras protein signal transduction;GO:0051058 negative regulation of small GTPase mediated signal transduction;GO:0046578 regulation of Ras protein signal transduction                                     </td><td>GO:0031463 Cul3-RING ubiquitin ligase complex;GO:0055038 recycling endosome membrane;GO:0031461 cullin-RING ubiquitin ligase complex                              </td><td>GO:0031267 small GTPase binding;GO:0051020 GTPase binding;GO:0019899 enzyme binding                                                                                                          </td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    <tr><td>RBFOX2  </td><td>RBFOX2  </td><td>RNA binding fox-1 homolog 2                   </td><td>GO:0010724 regulation of definitive erythrocyte differentiation;GO:0021942 radial glia guided migration of Purkinje cell;GO:0060318 definitive erythrocyte differentiation                                                                 </td><td>GO:0005654 nucleoplasm;GO:0031981 nuclear lumen;GO:0005829 cytosol                                                                                                </td><td>GO:0003714 transcription corepressor activity;GO:0003712 transcription coregulator activity;GO:0003729 mRNA binding                                                                          </td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+    <tr><td>KIAA0196</td><td>WASHC5  </td><td>WASH complex subunit 5                        </td><td>GO:0140285 endosome fission;GO:0040038 polar body extrusion after meiotic divisions;GO:0090306 spindle assembly involved in meiosis                                                                                                        </td><td>GO:0071203 WASH complex;GO:0005769 early endosome;GO:0043025 neuronal cell body                                                                                   </td><td>GO:0005515 protein binding;GO:0005488 binding                                                                                                                                                </td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td></tr>
+    <tr><td>TMEM258 </td><td>TMEM258 </td><td>transmembrane protein 258                     </td><td>GO:0006487 protein N-linked glycosylation;GO:0006486 protein glycosylation;GO:0043413 macromolecule glycosylation                                                                                                                          </td><td>GO:0034998 oligosaccharyltransferase I complex;GO:0008250 oligosaccharyltransferase complex;GO:0140534 endoplasmic reticulum protein-containing complex           </td><td>GO:0005515 protein binding;GO:0005488 binding                                                                                                                                                </td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    <tr><td>PYGL    </td><td>PYGL    </td><td>glycogen phosphorylase L                      </td><td>GO:0006015 5-phosphoribose 1-diphosphate biosynthetic process;GO:0046391 5-phosphoribose 1-diphosphate metabolic process;GO:0005980 glycogen catabolic process                                                                             </td><td>GO:1904813 ficolin-1-rich granule lumen;GO:0101002 ficolin-1-rich granule;GO:0034774 secretory granule lumen                                                      </td><td>GO:0002060 purine nucleobase binding;GO:0008184 glycogen phosphorylase activity;GO:0102250 linear malto-oligosaccharide phosphorylase activity                                               </td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+    <tr><td>RXRA    </td><td>RXRA    </td><td>retinoid X receptor alpha                     </td><td>GO:0035357 peroxisome proliferator activated receptor signaling pathway;GO:0019048 modulation by virus of host process;GO:0048384 retinoic acid receptor signaling pathway                                                                 </td><td>GO:0090575 RNA polymerase II transcription regulator complex;GO:0005667 transcription regulator complex;GO:0043235 receptor complex                               </td><td>GO:0050692 DNA binding domain binding;GO:0070644 vitamin D response element binding;GO:0044323 retinoic acid-responsive element binding                                                      </td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+    <tr><td>DSCAML1 </td><td>DSCAML1 </td><td>DS cell adhesion molecule like 1              </td><td>GO:0070593 dendrite self-avoidance;GO:0001709 cell fate determination;GO:0008038 neuron recognition                                                                                                                                        </td><td>GO:0030424 axon;GO:0009986 cell surface;GO:0045202 synapse                                                                                                        </td><td>GO:0098632 cell-cell adhesion mediator activity;GO:0098631 cell adhesion mediator activity;GO:0050839 cell adhesion molecule binding                                                         </td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    <tr><td>SMAD2   </td><td>SMAD2   </td><td>SMAD family member 2                          </td><td>GO:1900224 positive regulation of nodal signaling pathway involved in determination of lateral mesoderm left/right asymmetry;GO:0007352 zygotic specification of dorsal/ventral axis;GO:0007182 common-partner SMAD protein phosphorylation</td><td>GO:0032444 activin responsive factor complex;GO:0071144 heteromeric SMAD protein complex;GO:0071141 SMAD protein complex                                          </td><td>GO:0034713 type I transforming growth factor beta receptor binding;GO:0070410 co-SMAD binding;GO:0070411 I-SMAD binding                                                                      </td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td></tr>
+    <tr><td>CIT     </td><td>CIT     </td><td>citron rho-interacting serine/threonine kinase</td><td>GO:0035331 negative regulation of hippo signaling;GO:0035330 regulation of hippo signaling;GO:0032467 positive regulation of cytokinesis                                                                                                   </td><td>GO:0005856 cytoskeleton;GO:0005829 cytosol;GO:0043232 intracellular non-membrane-bounded organelle                                                                </td><td>GO:0001223 transcription coactivator binding;GO:0030291 protein serine/threonine kinase inhibitor activity;GO:0097110 scaffold protein binding                                               </td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    <tr><td>COPB2   </td><td>COPB2   </td><td>COPI coat complex subunit beta 2              </td><td>GO:0006891 intra-Golgi vesicle-mediated transport;GO:1901998 toxin transport;GO:0006890 retrograde vesicle-mediated transport, Golgi to endoplasmic reticulum                                                                              </td><td>GO:0030126 COPI vesicle coat;GO:0030663 COPI-coated vesicle membrane;GO:0030137 COPI-coated vesicle                                                               </td><td>GO:0005198 structural molecule activity;GO:0005515 protein binding;GO:0005488 binding                                                                                                        </td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    <tr><td>KDM5B   </td><td>KDM5B   </td><td>lysine demethylase 5B                         </td><td>GO:0060763 mammary duct terminal end bud growth;GO:0035938 estradiol secretion;GO:2000864 regulation of estradiol secretion                                                                                                                </td><td>GO:0005654 nucleoplasm;GO:0031981 nuclear lumen;GO:0005829 cytosol                                                                                                </td><td>GO:0034648 histone demethylase activity (H3-dimethyl-K4 specific);GO:0034647 histone demethylase activity (H3-trimethyl-K4 specific);GO:0032453 histone demethylase activity (H3-K4 specific)</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    <tr><td>RNASEH2C</td><td>RNASEH2C</td><td>ribonuclease H2 subunit C                     </td><td>GO:0006401 RNA catabolic process;GO:0034655 nucleobase-containing compound catabolic process;GO:0046700 heterocycle catabolic process                                                                                                      </td><td>GO:0032299 ribonuclease H2 complex;GO:0140535 intracellular protein-containing complex;GO:0032991 protein-containing complex                                      </td><td>GO:0005515 protein binding;GO:0005488 binding                                                                                                                                                </td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody>
+</table>
+
+
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined" target="_blank" rel="noopener"></a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://yfu1116.github.io/project/2021-05-13-indel+snv-novel-GO/">https://yfu1116.github.io/project/2021-05-13-indel+snv-novel-GO/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" data-sites="github,email,facebook,twitter,weixin,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/project/2021-05-13_md_indel-snv_ASD_riskG_GO_DisGeNET_17/"><img class="next-cover" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="onerror=null;src='/project/img/404.jpg'"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">2021-05-13_md_indel-snv_ASD_riskG_GO_DisGeNET_17</div></div></a></div></nav></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By </div><div class="framework-info"><span>Framework </span><a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener">Butterfly</a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="font_plus" type="button" title="Increase Font Size"><i class="fas fa-plus"></i></button><button id="font_minus" type="button" title="Decrease Font Size"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></section><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/project/js/utils.js"></script><script src="/project/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    loader: {
+      source: {
+        '[tex]/amsCd': '[tex]/amscd'
+      }
+    },
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, '']
+      }
+    }
+  }
+  
+  var script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></div></body></html>
