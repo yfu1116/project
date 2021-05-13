@@ -1,0 +1,214 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>2021-05-11-rr-all-annota-ASD-CHD | yang's blog</title><meta name="description" content="ASD1readRDS(&quot;&#x2F;storage11_7T&#x2F;fuy&#x2F;TADA-A&#x2F;cell_WES&#x2F;DNM&#x2F;results&#x2F;0511-all-rr.rds&quot;)    A data.table: 23 × 4      separate_logRRupper_boundlower_boundannota     &lt;dbl&gt;&lt;dbl&gt;&lt;dbl&gt;&lt;"><meta name="author" content=""><meta name="copyright" content=""><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/project/img/favicon.png"><link rel="canonical" href="https://yfu1116.github.io/project/2021-05-11-rr-all-annota-ASD-CHD/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="article"><meta property="og:title" content="2021-05-11-rr-all-annota-ASD-CHD"><meta property="og:url" content="https://yfu1116.github.io/project/2021-05-11-rr-all-annota-ASD-CHD/"><meta property="og:site_name" content="yang's blog"><meta property="og:description" content="ASD1readRDS(&quot;&#x2F;storage11_7T&#x2F;fuy&#x2F;TADA-A&#x2F;cell_WES&#x2F;DNM&#x2F;results&#x2F;0511-all-rr.rds&quot;)    A data.table: 23 × 4      separate_logRRupper_boundlower_boundannota     &lt;dbl&gt;&lt;dbl&gt;&lt;dbl&gt;&lt;"><meta property="og:image" content="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg"><meta property="article:published_time" content="2021-05-13T02:20:31.135Z"><meta property="article:modified_time" content="2021-05-13T02:20:42.080Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'false'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/project/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/project/',
+  hexoversion: '4.0.0',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  bookmark: {
+    message_prev: 'Press',
+    message_next: 'to bookmark this page'
+  },
+  runtime_unit: 'days',
+  runtime: false,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false    
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: true,
+  postUpdate: '2021-05-13 10:20:42'
+}</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript></head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/project/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/project/archives/"><div class="headline">Articles</div><div class="length_num">57</div></a></div></div></div><hr/></div></div><div id="body-wrap"><div id="sidebar"><i class="fas fa-arrow-right on" id="toggle-sidebar"></i><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#ASD"><span class="toc-number">1.</span> <span class="toc-text">ASD</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CHD"><span class="toc-number">2.</span> <span class="toc-text">CHD</span></a></li></ol></div></div></div><header class="post-bg" id="page-header" style="background-image: url(https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/project/">yang's blog</a></span><span class="pull-right menus"><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">2021-05-11-rr-all-annota-ASD-CHD</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-05-13T02:20:31.135Z" title="Created 2021-05-13 10:20:31">2021-05-13</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2021-05-13T02:20:42.080Z" title="Updated 2021-05-13 10:20:42">2021-05-13</time></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><h3 id="ASD"><a href="#ASD" class="headerlink" title="ASD"></a>ASD</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">readRDS(&quot;/storage11_7T/fuy/TADA-A/cell_WES/DNM/results/0511-all-rr.rds&quot;)</span><br></pre></td></tr></table></figure>
+
+
+<table>
+<caption>A data.table: 23 × 4</caption>
+<thead>
+    <tr><th scope="col">separate_logRR</th><th scope="col">upper_bound</th><th scope="col">lower_bound</th><th scope="col">annota</th></tr>
+    <tr><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;chr&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>-1.000000</td><td><span style="white-space:pre-wrap">  1.2069758</span></td><td>-3.2069758</td><td><span style="white-space:pre-wrap">miRNA.SNP.UTR pval &lt; 0.05                                                                                 </span></td></tr>
+    <tr><td>-1.000000</td><td><span style="white-space:pre-wrap">  0.1926188</span></td><td>-2.1926188</td><td><span style="white-space:pre-wrap">spidex: no nonsyn &amp; stop gain &amp; loss                                                                      </span></td></tr>
+    <tr><td>-0.342154</td><td>  2.6829561</td><td>-3.3672642</td><td>RADAR: top5% variants in the post-transcriptional regulome of RBP                                         </td></tr>
+    <tr><td>-1.000000</td><td>  2.8204961</td><td>-4.8204960</td><td>RADAR: top1%                                                                                              </td></tr>
+    <tr><td>-1.000000</td><td><span style="white-space:pre-wrap">  3.5018739</span></td><td>-5.5018738</td><td><span style="white-space:pre-wrap">all RBP biding regions &amp; RADAR top1%                                                                      </span></td></tr>
+    <tr><td> 1.599488</td><td>  3.0837531</td><td> 0.1152234</td><td>hnRNPL binding regions                                                                                    </td></tr>
+    <tr><td> 1.897444</td><td><span style="white-space:pre-wrap">  2.1033770</span></td><td> 1.6915119</td><td><span style="white-space:pre-wrap">coding constraint &gt;= 90                                                                                   </span></td></tr>
+    <tr><td> 1.844203</td><td>  2.2785397</td><td> 1.4098657</td><td>dbSNP.RBP-Var: likely to affcted RNA-bind, RNA 2nd structure                                              </td></tr>
+    <tr><td> 1.312018</td><td>  1.6459882</td><td> 0.9780486</td><td>RNA modifications, including m6a, m1A, m5C, and etc.(filter_low_RMVar_hb)                                 </td></tr>
+    <tr><td> 2.483918</td><td><span style="white-space:pre-wrap">  2.9038365</span></td><td> 2.0639991</td><td><span style="white-space:pre-wrap">deepsea: mix ago_adult_brain.BA4 &amp; ago_adult_brain.Cingulate.gyrus                                        </span></td></tr>
+    <tr><td> 2.592861</td><td><span style="white-space:pre-wrap">  3.0063684</span></td><td> 2.1793531</td><td>deepsea: mix elavl_Adult_brain.all_human_samples &amp; elavl_Adult_brain.BA9_Alzheimer &amp; elavl_Adult_brain.BA9</td></tr>
+    <tr><td> 1.621601</td><td><span style="white-space:pre-wrap">  1.8358553</span></td><td> 1.4073458</td><td><span style="white-space:pre-wrap">1&lt;= mpc score &lt; 2                                                                                         </span></td></tr>
+    <tr><td> 2.321405</td><td><span style="white-space:pre-wrap">  2.5479509</span></td><td> 2.0948598</td><td><span style="white-space:pre-wrap">mpc score &gt;= 2                                                                                            </span></td></tr>
+    <tr><td> 2.600493</td><td>  2.8280700</td><td> 2.3729150</td><td>interaction-disrupting: mutations annotated as interface residues and probably damaging by PolyPhen-2     </td></tr>
+    <tr><td> 1.757185</td><td>  1.8924045</td><td> 1.6219658</td><td>pathogenic missense: primateAI_MVP_mix                                                                    </td></tr>
+    <tr><td> 1.773391</td><td>  1.9670277</td><td> 1.5797548</td><td>spidex_lower10pct                                                                                         </td></tr>
+    <tr><td> 1.997280</td><td><span style="white-space:pre-wrap">  3.6649529</span></td><td> 0.3296074</td><td><span style="white-space:pre-wrap">spliceAI accept gain &gt;= 0.05                                                                              </span></td></tr>
+    <tr><td> 2.800307</td><td><span style="white-space:pre-wrap">  3.4769404</span></td><td> 2.1236739</td><td><span style="white-space:pre-wrap">spliceAI donnor gain &gt;= 0.05                                                                              </span></td></tr>
+    <tr><td> 2.081598</td><td>  2.5579298</td><td> 1.6052671</td><td>ptv in [0,0.5)                                                                                            </td></tr>
+    <tr><td> 2.209710</td><td>  2.9645287</td><td> 1.4548916</td><td>ptv in [0.5,0.995)                                                                                        </td></tr>
+    <tr><td> 3.493791</td><td>  3.7594861</td><td> 3.2280951</td><td>ptv in [0.995,1)                                                                                          </td></tr>
+    <tr><td>-1.000000</td><td>-12.3062344</td><td>10.3062344</td><td><span style="white-space:pre-wrap">spliceAI accept loss &gt;= 0.05                                                                              </span></td></tr>
+    <tr><td> 0.365112</td><td> -0.5284987</td><td> 1.2587227</td><td><span style="white-space:pre-wrap">spliceAI donor loss &gt;= 0.05                                                                               </span></td></tr>
+</tbody>
+</table>
+
+
+
+<h3 id="CHD"><a href="#CHD" class="headerlink" title="CHD"></a>CHD</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">readRDS(&quot;/storage11_7T/fuy/TADA-A/CHD/rds/0512_all_annota_rr.rds&quot;)</span><br></pre></td></tr></table></figure>
+
+
+<table>
+<caption>A data.frame: 24 × 5</caption>
+<thead>
+    <tr><th scope="col">logRR</th><th scope="col">lower_bound</th><th scope="col">upper_bound</th><th scope="col">idx</th><th scope="col">annota</th></tr>
+    <tr><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;chr&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>-1.000000</td><td> 3.298834</td><td> -5.29883368</td><td> 1</td><td><span style="white-space:pre-wrap">miRNA.SNP.UTR pval &lt; 0.05                                                                                 </span></td></tr>
+    <tr><td>-1.000000</td><td>27.517077</td><td>-29.51707721</td><td> 2</td><td>RNAedit RBP-Var: likely to affected RNA-bind, RNA 2nd structure                                           </td></tr>
+    <tr><td> 1.687606</td><td> 2.192012</td><td><span style="white-space:pre-wrap">  1.18320074</span></td><td> 3</td><td><span style="white-space:pre-wrap">coding constraint &gt;= 90                                                                                   </span></td></tr>
+    <tr><td>-1.000000</td><td> 7.393399</td><td> -9.39339857</td><td> 4</td><td>RNA modifications, including m6a, m1A, m5C, and etc.(filter_low_RMVar_hb)                                 </td></tr>
+    <tr><td> 1.814882</td><td> 2.339178</td><td>  1.29058489</td><td> 5</td><td>RADAR: top5% variants in the post-transcriptional regulome of RBP                                         </td></tr>
+    <tr><td> 2.194627</td><td> 2.734925</td><td>  1.65432873</td><td> 6</td><td>dbSNP.RBP-Var: likely to affcted RNA-bind, RNA 2nd structure                                              </td></tr>
+    <tr><td>-1.000000</td><td> 3.287827</td><td> -5.28782647</td><td> 7</td><td>RBP-VarDB                                                                                                 </td></tr>
+    <tr><td>-1.000000</td><td> 4.715246</td><td> -6.71524547</td><td> 8</td><td>ribosnitch                                                                                                </td></tr>
+    <tr><td>-1.000000</td><td>12.532978</td><td>-14.53297803</td><td> 9</td><td>CLIPdb                                                                                                    </td></tr>
+    <tr><td> 2.430548</td><td> 3.074458</td><td><span style="white-space:pre-wrap">  1.78663714</span></td><td>10</td><td><span style="white-space:pre-wrap">deepsea: mix ago_adult_brain.BA4 &amp; ago_adult_brain.Cingulate.gyrus                                        </span></td></tr>
+    <tr><td> 1.738795</td><td> 3.155253</td><td><span style="white-space:pre-wrap">  0.32233776</span></td><td>11</td><td>deepsea: mix elavl_Adult_brain.all_human_samples &amp; elavl_Adult_brain.BA9_Alzheimer &amp; elavl_Adult_brain.BA9</td></tr>
+    <tr><td> 1.813293</td><td> 2.139593</td><td><span style="white-space:pre-wrap">  1.48699171</span></td><td>12</td><td><span style="white-space:pre-wrap">1&lt;= mpc score &lt; 2                                                                                         </span></td></tr>
+    <tr><td> 2.058641</td><td> 2.554155</td><td><span style="white-space:pre-wrap">  1.56312683</span></td><td>13</td><td><span style="white-space:pre-wrap">mpc score &gt;= 2                                                                                            </span></td></tr>
+    <tr><td> 2.307627</td><td> 2.803729</td><td>  1.81152465</td><td>14</td><td>interaction-disrupting: mutations annotated as interface residues and probably damaging by PolyPhen-2     </td></tr>
+    <tr><td> 2.035133</td><td> 2.225165</td><td>  1.84509985</td><td>15</td><td>pathogenic missense: primateAI_MVP_mix                                                                    </td></tr>
+    <tr><td> 2.030793</td><td> 2.296126</td><td>  1.76545964</td><td>16</td><td>spidex_lower10pct                                                                                         </td></tr>
+    <tr><td> 2.944004</td><td> 4.195226</td><td><span style="white-space:pre-wrap">  1.69278194</span></td><td>17</td><td><span style="white-space:pre-wrap">spliceAI accept gain &gt;= 0.05                                                                              </span></td></tr>
+    <tr><td> 2.472156</td><td> 3.889113</td><td><span style="white-space:pre-wrap">  1.05519861</span></td><td>18</td><td><span style="white-space:pre-wrap">spliceAI donnor gain &gt;= 0.05                                                                              </span></td></tr>
+    <tr><td>-1.000000</td><td>17.383819</td><td>-19.38381850</td><td>19</td><td><span style="white-space:pre-wrap">spliceAI accept loss &gt;= 0.05                                                                              </span></td></tr>
+    <tr><td> 2.156331</td><td> 4.376120</td><td> -0.06345714</td><td>20</td><td><span style="white-space:pre-wrap">spliceAI donor loss &gt;= 0.05                                                                               </span></td></tr>
+    <tr><td> 2.283768</td><td> 2.944003</td><td>  1.62353425</td><td>21</td><td>ptv in [0,0.5)                                                                                            </td></tr>
+    <tr><td> 3.039657</td><td> 3.769662</td><td>  2.30965246</td><td>22</td><td>ptv in [0.5,995)                                                                                          </td></tr>
+    <tr><td> 3.701728</td><td> 4.160876</td><td>  3.24258001</td><td>23</td><td>ptv in [0.995,1)                                                                                          </td></tr>
+    <tr><td>-1.000000</td><td> 6.713247</td><td> -8.71324678</td><td>24</td><td>hnRNPL RNA-binding                                                                                        </td></tr>
+</tbody>
+</table>
+
+
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined" target="_blank" rel="noopener"></a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://yfu1116.github.io/project/2021-05-11-rr-all-annota-ASD-CHD/">https://yfu1116.github.io/project/2021-05-11-rr-all-annota-ASD-CHD/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" data-sites="github,email,facebook,twitter,weixin,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/project/2021-05-13-indel-model-ASD/"><img class="next-cover" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="onerror=null;src='/project/img/404.jpg'"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">2021-05-13-indel-model-ASD</div></div></a></div></nav></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By </div><div class="framework-info"><span>Framework </span><a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener">Butterfly</a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="font_plus" type="button" title="Increase Font Size"><i class="fas fa-plus"></i></button><button id="font_minus" type="button" title="Decrease Font Size"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></section><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/project/js/utils.js"></script><script src="/project/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    loader: {
+      source: {
+        '[tex]/amsCd': '[tex]/amscd'
+      }
+    },
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, '']
+      }
+    }
+  }
+  
+  var script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></div></body></html>
