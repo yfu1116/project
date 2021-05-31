@@ -1,0 +1,256 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>2021-05-25-tadaA-report | yang's blog</title><meta name="description" content="目前进展及分析  详见1,2  下一步计划  100 rounds simulation (尚未完全跑完) 完成CHD部分 挑选candidate genes  ASDsimulationparameters: 3 annotations (Lof: ptv &gt; 0.995, union of spidex_low3 and spliceai, without ptv, mpc&gt;2)"><meta name="author" content=""><meta name="copyright" content=""><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/project/img/favicon.png"><link rel="canonical" href="https://yfu1116.github.io/project/2021-05-25-tadaA-report/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="article"><meta property="og:title" content="2021-05-25-tadaA-report"><meta property="og:url" content="https://yfu1116.github.io/project/2021-05-25-tadaA-report/"><meta property="og:site_name" content="yang's blog"><meta property="og:description" content="目前进展及分析  详见1,2  下一步计划  100 rounds simulation (尚未完全跑完) 完成CHD部分 挑选candidate genes  ASDsimulationparameters: 3 annotations (Lof: ptv &gt; 0.995, union of spidex_low3 and spliceai, without ptv, mpc&gt;2)"><meta property="og:image" content="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg"><meta property="article:published_time" content="2021-05-31T01:45:12.480Z"><meta property="article:modified_time" content="2021-05-31T01:45:36.245Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'false'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/project/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/project/',
+  hexoversion: '4.0.0',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  bookmark: {
+    message_prev: 'Press',
+    message_next: 'to bookmark this page'
+  },
+  runtime_unit: 'days',
+  runtime: false,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false    
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: true,
+  postUpdate: '2021-05-31 09:45:36'
+}</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript></head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/project/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/project/archives/"><div class="headline">Articles</div><div class="length_num">64</div></a></div></div></div><hr/></div></div><div id="body-wrap"><div id="sidebar"><i class="fas fa-arrow-right on" id="toggle-sidebar"></i><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#ASD"><span class="toc-number">1.</span> <span class="toc-text">ASD</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#simulation"><span class="toc-number">1.1.</span> <span class="toc-text">simulation</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#average-of-100-rounds-simulation"><span class="toc-number">1.1.1.</span> <span class="toc-text">average of 100 rounds simulation</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#effect-size"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">effect size</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#FDR"><span class="toc-number">1.1.1.2.</span> <span class="toc-text">FDR</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#effect-size-of-14-SNV-annotations"><span class="toc-number">1.2.</span> <span class="toc-text">effect size of 14 SNV annotations</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#effect-size-of-frameshift"><span class="toc-number">1.3.</span> <span class="toc-text">effect size of frameshift</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#novel-genes"><span class="toc-number">1.4.</span> <span class="toc-text">novel genes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#potentially-damaging-mutations"><span class="toc-number">1.5.</span> <span class="toc-text">potentially damaging mutations</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#CHD"><span class="toc-number">2.</span> <span class="toc-text">CHD</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#effect-size-of-all-SNV-annotations"><span class="toc-number">2.1.</span> <span class="toc-text">effect size of all SNV annotations</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#effect-size-of-frameshift-1"><span class="toc-number">2.2.</span> <span class="toc-text">effect size of frameshift</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#novel-genes-1"><span class="toc-number">2.3.</span> <span class="toc-text">novel genes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Enrichment-analysis"><span class="toc-number">2.4.</span> <span class="toc-text">Enrichment analysis</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#candidate-genes"><span class="toc-number">2.5.</span> <span class="toc-text">candidate genes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#potentially-damaging-variants"><span class="toc-number">2.6.</span> <span class="toc-text">potentially damaging variants</span></a></li></ol></li></ol></div></div></div><header class="post-bg" id="page-header" style="background-image: url(https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/project/">yang's blog</a></span><span class="pull-right menus"><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">2021-05-25-tadaA-report</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-05-31T01:45:12.480Z" title="Created 2021-05-31 09:45:12">2021-05-31</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2021-05-31T01:45:36.245Z" title="Updated 2021-05-31 09:45:36">2021-05-31</time></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><p><strong>目前进展及分析</strong></p>
+<ul>
+<li>详见1,2</li>
+</ul>
+<p><strong>下一步计划</strong></p>
+<ul>
+<li>100 rounds simulation (尚未完全跑完)</li>
+<li>完成CHD部分</li>
+<li>挑选candidate genes</li>
+</ul>
+<h1 id="ASD"><a href="#ASD" class="headerlink" title="ASD"></a>ASD</h1><h2 id="simulation"><a href="#simulation" class="headerlink" title="simulation"></a>simulation</h2><p><strong>parameters:</strong></p>
+<p>3 annotations (<code>Lof: ptv &gt; 0.995</code>, <code>union of spidex_low3 and spliceai, without ptv</code>, <code>mpc&gt;2</code>) , log-RR = 3, 1, 2</p>
+<p><code>pi</code> = 0.05,   <code>Sample size N</code>  = 6000,    <code>num_of_genes</code> = 5000</p>
+<h3 id="average-of-100-rounds-simulation"><a href="#average-of-100-rounds-simulation" class="headerlink" title="average of 100 rounds simulation"></a>average of 100 rounds simulation</h3><h4 id="effect-size"><a href="#effect-size" class="headerlink" title="effect size"></a>effect size</h4><ul>
+<li><code>sim_logRR</code> is within the confidence interval</li>
+<li>pi_estimated = 0.055</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">readRDS(&quot;/storage11_7T/fuy/TADA-A/cell_WES/DNM/simulation/rr_allinfo.dt.rds&quot;)</span><br></pre></td></tr></table></figure>
+
+
+<table>
+<caption>A data.frame: 4 × 7</caption>
+<thead>
+    <tr><th scope="col">joint_estim_pi</th><th scope="col">joint_fix_pi0.05</th><th scope="col">sim_logRR</th><th scope="col">annota</th><th scope="col">separate_fix_pi</th><th scope="col">upper_bound</th><th scope="col">lower_bound</th></tr>
+    <tr><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>2.60486096</td><td>2.6759428</td><td>3.0</td><td><span style="white-space:pre-wrap">Lof: ptv &gt; 0.995                              </span></td><td>2.732214</td><td>3.7379131</td><td> 1.72651467</td></tr>
+    <tr><td>1.63200522</td><td>1.6966532</td><td>2.0</td><td>union of spidex_low3 and spliceai, without ptv</td><td>1.835084</td><td>2.7070583</td><td> 0.96310953</td></tr>
+    <tr><td>0.65504221</td><td>0.6385113</td><td>1.0</td><td>mpc2                                          </td><td>1.208715</td><td>2.6279897</td><td>-0.21055962</td></tr>
+    <tr><td>0.05489308</td><td>       NA</td><td>0.1</td><td>pi_estimate                                   </td><td>      NA</td><td>0.1691957</td><td>-0.05940955</td></tr>
+</tbody>
+</table>
+
+
+
+<h4 id="FDR"><a href="#FDR" class="headerlink" title="FDR"></a>FDR</h4><p>fdr is always less than cutoff.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">all_g = rep(4896,4) </span><br><span class="line">risk_g = rep(239,4)</span><br><span class="line">pi = rep(239/4896,4)</span><br><span class="line">FDR_cutoff = c(.2,.4,.6,.8)</span><br><span class="line">g_identified = c(2,6,19,122)</span><br><span class="line">g_false = c(0,2,10,95)</span><br><span class="line">df = data.frame(all_g,risk_g,pi,FDR_cutoff,g_identified,g_false)</span><br><span class="line">df$FDR = df$g_false / df$g_identified</span><br><span class="line">df</span><br></pre></td></tr></table></figure>
+
+
+<table>
+<caption>A data.frame: 4 × 7</caption>
+<thead>
+    <tr><th scope="col">all_g</th><th scope="col">risk_g</th><th scope="col">pi</th><th scope="col">FDR_cutoff</th><th scope="col">g_identified</th><th scope="col">g_false</th><th scope="col">FDR</th></tr>
+    <tr><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>4896</td><td>239</td><td>0.04881536</td><td>0.2</td><td>  2</td><td> 0</td><td>0.0000000</td></tr>
+    <tr><td>4896</td><td>239</td><td>0.04881536</td><td>0.4</td><td>  6</td><td> 2</td><td>0.3333333</td></tr>
+    <tr><td>4896</td><td>239</td><td>0.04881536</td><td>0.6</td><td> 19</td><td>10</td><td>0.5263158</td></tr>
+    <tr><td>4896</td><td>239</td><td>0.04881536</td><td>0.8</td><td>122</td><td>95</td><td>0.7786885</td></tr>
+</tbody>
+</table>
+
+
+
+<h2 id="effect-size-of-14-SNV-annotations"><a href="#effect-size-of-14-SNV-annotations" class="headerlink" title="effect size of 14 SNV annotations"></a>effect size of 14 SNV annotations</h2><p><a href="https://yfu1116.github.io/project/2021-05-20-fix-pi-VS-estim-pi-effect-size-num-enrich/">https://yfu1116.github.io/project/2021-05-20-fix-pi-VS-estim-pi-effect-size-num-enrich/</a></p>
+<h2 id="effect-size-of-frameshift"><a href="#effect-size-of-frameshift" class="headerlink" title="effect size of frameshift"></a>effect size of frameshift</h2><ul>
+<li>calibrate frameshift rate using the number of non-frameshift from siblings</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">glm(observed_nonfs_count ~ SNV_rate_2N,family=poisson(link=&quot;log&quot;),data=df)  </span><br><span class="line"></span><br><span class="line">nonfs_rate_2N = exp(coef[1] + coef[2]* SNV_rate_2N)</span><br><span class="line"></span><br><span class="line">frameshift_rate_2N = nonfs_rate_2N * (fs count / nonfs count)</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>estimate effect size using EM </p>
+<p> RR = 22.5,    logRR = 3.1</p>
+</li>
+</ul>
+<p>details:<a href="https://yfu1116.github.io/project/2021-05-24-nonfs-rate-fs-gama-Copy1/">https://yfu1116.github.io/project/2021-05-24-nonfs-rate-fs-gama-Copy1/</a></p>
+<h2 id="novel-genes"><a href="#novel-genes" class="headerlink" title="novel genes"></a>novel genes</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">desc = c(&quot;baseline (MPC + PTV)&quot;,</span><br><span class="line">         &quot;all SNV annota&quot;,</span><br><span class="line">         &quot;all SNV annota + frameshift&quot;)</span><br><span class="line"></span><br><span class="line">pi_method1 = c(&quot;fix&quot;,&quot;fix&quot;,&quot;--&quot;)</span><br><span class="line">num_risk_g1 = c(42,66,&quot;--&quot;)</span><br><span class="line">pi_method2 = c(&quot;estimate&quot;,&quot;estimate&quot;,&quot;estimate&quot;)</span><br><span class="line">num_risk_g2 = c(54,81,172)</span><br><span class="line">data.frame(desc,pi_method1,num_risk_g1 ,pi_method2,num_risk_g2 )</span><br></pre></td></tr></table></figure>
+
+
+<table>
+<caption>A data.frame: 3 × 5</caption>
+<thead>
+    <tr><th scope="col">desc</th><th scope="col">pi_method1</th><th scope="col">num_risk_g1</th><th scope="col">pi_method2</th><th scope="col">num_risk_g2</th></tr>
+    <tr><th scope="col">&lt;fct&gt;</th><th scope="col">&lt;fct&gt;</th><th scope="col">&lt;fct&gt;</th><th scope="col">&lt;fct&gt;</th><th scope="col">&lt;dbl&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>baseline (MPC + PTV)       </td><td>fix</td><td>42</td><td>estimate</td><td> 54</td></tr>
+    <tr><td>all SNV annota             </td><td>fix</td><td>66</td><td>estimate</td><td> 81</td></tr>
+    <tr><td>all SNV annota + frameshift</td><td>-- </td><td>--</td><td>estimate</td><td>172</td></tr>
+</tbody>
+</table>
+
+
+
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">comparsion = c(&quot;`snv (estim pi)` vs. `snv (fix pi)`&quot;,</span><br><span class="line">              &quot;`frameshift + snv` vs. `snv`&quot;,</span><br><span class="line">              &quot;`frameshift + snv` vs. `baseline`&quot;)</span><br><span class="line">risk_g = c(&quot;81 vs. 66&quot;,&quot;172 vs. 81&quot;,&quot;172 vs. 54&quot;)</span><br><span class="line">novel_g = c(15,93,126)</span><br><span class="line">novel_g_enrich_terms = c(&quot;Neurodevelopmental Disorders&quot;,&quot;Neurodevelopmental Disorders&quot;,&quot;Neurodevelopmental Disorders&quot;)</span><br><span class="line">conclusion = c(&quot;`estimate pi` outperforms `fix pi`&quot;,&quot;frameshift model works&quot;,&quot;other annota helps to identify ND genes &quot;)</span><br><span class="line">data.frame(comparsion,risk_g,novel_g,novel_g_enrich_terms,conclusion)</span><br></pre></td></tr></table></figure>
+
+
+<table>
+<caption>A data.frame: 3 × 5</caption>
+<thead>
+    <tr><th scope="col">comparsion</th><th scope="col">risk_g</th><th scope="col">novel_g</th><th scope="col">novel_g_enrich_terms</th><th scope="col">conclusion</th></tr>
+    <tr><th scope="col">&lt;fct&gt;</th><th scope="col">&lt;fct&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;fct&gt;</th><th scope="col">&lt;fct&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>`snv (estim pi)` vs. `snv (fix pi)`</td><td>81 vs. 66 </td><td> 15</td><td>Neurodevelopmental Disorders</td><td>`estimate pi` outperforms `fix pi`      </td></tr>
+    <tr><td>`frameshift + snv` vs. `snv`       </td><td>172 vs. 81</td><td> 93</td><td>Neurodevelopmental Disorders</td><td>frameshift model works                  </td></tr>
+    <tr><td>`frameshift + snv` vs. `baseline`  </td><td>172 vs. 54</td><td>126</td><td>Neurodevelopmental Disorders</td><td>other annota helps to identify ND genes </td></tr>
+</tbody>
+</table>
+
+
+
+<p>Enrichment analysis for novel ASD risk genes from <code>frameshift + snv</code> vs. <code>baseline</code>    (merge genes from the same family)</p>
+<p><strong>GO</strong></p>
+<p><img src= "/project/img/loading.gif" data-lazy-src="https://z3.ax1x.com/2021/05/27/2PLWCt.png" alt="2PLWCt.png"></p>
+<p><strong>DisGeNET (gene-disease association)</strong></p>
+<p><img src= "/project/img/loading.gif" data-lazy-src="https://z3.ax1x.com/2021/05/27/2POSrF.png" alt="2POSrF.png"></p>
+<p><strong>Additional issue:</strong></p>
+<p>有关overlapping genes： </p>
+<p>window中保留了overlap的区间，有些基因，如UGT系列，exon区域大部分重叠，这些重叠的基因都会被模型找出，导致enrichment analysis相关类别（Neurodevelopmental Disorders）的富集度也减小，因此。。只保留一个</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">UGT1A3</span><br><span class="line">UGT1A4</span><br><span class="line">UGT1A5</span><br><span class="line">UGT1A7</span><br><span class="line">UGT1A10</span><br><span class="line">UGT1A9</span><br><span class="line">UGT1A1</span><br><span class="line">UGT1A6</span><br></pre></td></tr></table></figure>
+
+<h2 id="potentially-damaging-mutations"><a href="#potentially-damaging-mutations" class="headerlink" title="potentially damaging mutations"></a>potentially damaging mutations</h2><p>candidates:</p>
+<h1 id="CHD"><a href="#CHD" class="headerlink" title="CHD"></a>CHD</h1><h2 id="effect-size-of-all-SNV-annotations"><a href="#effect-size-of-all-SNV-annotations" class="headerlink" title="effect size of all SNV annotations"></a>effect size of all SNV annotations</h2><ul>
+<li>ptv 0-0.05 在Joint estimation中表现奇怪,将其去除再做joint estim</li>
+</ul>
+<h2 id="effect-size-of-frameshift-1"><a href="#effect-size-of-frameshift-1" class="headerlink" title="effect size of frameshift"></a>effect size of frameshift</h2><h2 id="novel-genes-1"><a href="#novel-genes-1" class="headerlink" title="novel genes"></a>novel genes</h2><h2 id="Enrichment-analysis"><a href="#Enrichment-analysis" class="headerlink" title="Enrichment analysis"></a>Enrichment analysis</h2><h2 id="candidate-genes"><a href="#candidate-genes" class="headerlink" title="candidate genes"></a>candidate genes</h2><h2 id="potentially-damaging-variants"><a href="#potentially-damaging-variants" class="headerlink" title="potentially damaging variants"></a>potentially damaging variants</h2></div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined" target="_blank" rel="noopener"></a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://yfu1116.github.io/project/2021-05-25-tadaA-report/">https://yfu1116.github.io/project/2021-05-25-tadaA-report/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" data-sites="github,email,facebook,twitter,weixin,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/project/2021-05-24-nonfs-rate-fs-gama-Copy1/"><img class="next-cover" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="onerror=null;src='/project/img/404.jpg'"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">2021-05-24-nonfs-rate-fs-gama-Copy1</div></div></a></div></nav></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By </div><div class="framework-info"><span>Framework </span><a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener">Butterfly</a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="font_plus" type="button" title="Increase Font Size"><i class="fas fa-plus"></i></button><button id="font_minus" type="button" title="Decrease Font Size"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></section><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/project/js/utils.js"></script><script src="/project/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    loader: {
+      source: {
+        '[tex]/amsCd': '[tex]/amscd'
+      }
+    },
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, '']
+      }
+    }
+  }
+  
+  var script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></div></body></html>
