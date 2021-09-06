@@ -1,0 +1,389 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>2021-09-06-tadaA-report | yang's blog</title><meta name="description" content="Statistics of previous simulated parameters N=6000, logRR=3,2,1, prior=0.05 100 rounds of simulation  1readRDS(&quot;&#x2F;storage11_7T&#x2F;fuy&#x2F;TADA-A&#x2F;cell_WES&#x2F;DNM&#x2F;simulation&#x2F;org.rr.summary.rds&quot;)     ptv&amp;"><meta name="author" content=""><meta name="copyright" content=""><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/project/img/favicon.png"><link rel="canonical" href="https://yfu1116.github.io/project/2021-09-06-tadaA-report/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="article"><meta property="og:title" content="2021-09-06-tadaA-report"><meta property="og:url" content="https://yfu1116.github.io/project/2021-09-06-tadaA-report/"><meta property="og:site_name" content="yang's blog"><meta property="og:description" content="Statistics of previous simulated parameters N=6000, logRR=3,2,1, prior=0.05 100 rounds of simulation  1readRDS(&quot;&#x2F;storage11_7T&#x2F;fuy&#x2F;TADA-A&#x2F;cell_WES&#x2F;DNM&#x2F;simulation&#x2F;org.rr.summary.rds&quot;)     ptv&amp;"><meta property="og:image" content="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg"><meta property="article:published_time" content="2021-09-06T02:01:16.164Z"><meta property="article:modified_time" content="2021-09-06T02:01:23.314Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'false'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/project/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/project/',
+  hexoversion: '4.0.0',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  bookmark: {
+    message_prev: 'Press',
+    message_next: 'to bookmark this page'
+  },
+  runtime_unit: 'days',
+  runtime: false,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false    
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: true,
+  postUpdate: '2021-09-06 10:01:23'
+}</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript></head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/project/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/project/archives/"><div class="headline">Articles</div><div class="length_num">72</div></a></div></div></div><hr/></div></div><div id="body-wrap"><div id="sidebar"><i class="fas fa-arrow-right on" id="toggle-sidebar"></i><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Statistics-of-previous-simulated-parameters"><span class="toc-number">1.</span> <span class="toc-text">Statistics of previous simulated parameters</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#convergence-to-true-parameters-at-larger-sample-sizes-and-larger-effect-sizes"><span class="toc-number">2.</span> <span class="toc-text">convergence to true parameters at larger sample sizes and larger effect sizes</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#statistics-for-estimated-parameters"><span class="toc-number">2.1.</span> <span class="toc-text">statistics for estimated parameters</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#fdr"><span class="toc-number">2.2.</span> <span class="toc-text">fdr</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#FDR-calibration-under-feature-selection"><span class="toc-number">3.</span> <span class="toc-text">FDR calibration under feature selection</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#CHD-res-PTV-0-0-5-estim-logRR-in-the-joint-model-8"><span class="toc-number">4.</span> <span class="toc-text">CHD res, PTV 0-0.5, estim logRR in the joint model = -8</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Test-if-feature-selection-inflates-the-FDR"><span class="toc-number">5.</span> <span class="toc-text">Test if feature selection inflates the FDR</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#RBP-GWAS-annotation"><span class="toc-number">6.</span> <span class="toc-text">RBP_GWAS annotation</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#numbers-of-risk-genes"><span class="toc-number">7.</span> <span class="toc-text">numbers of risk genes</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Assess-new-genes"><span class="toc-number">8.</span> <span class="toc-text">Assess new genes</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#literature-search"><span class="toc-number">8.1.</span> <span class="toc-text">literature search</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#network-analysis"><span class="toc-number">8.2.</span> <span class="toc-text">network analysis</span></a></li></ol></li></ol></div></div></div><header class="post-bg" id="page-header" style="background-image: url(https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/project/">yang's blog</a></span><span class="pull-right menus"><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">2021-09-06-tadaA-report</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-09-06T02:01:16.164Z" title="Created 2021-09-06 10:01:16">2021-09-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2021-09-06T02:01:23.314Z" title="Updated 2021-09-06 10:01:23">2021-09-06</time></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><h1 id="Statistics-of-previous-simulated-parameters"><a href="#Statistics-of-previous-simulated-parameters" class="headerlink" title="Statistics of previous simulated parameters"></a>Statistics of previous simulated parameters</h1><ul>
+<li>N=6000, logRR=3,2,1, prior=0.05</li>
+<li>100 rounds of simulation</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">readRDS(&quot;/storage11_7T/fuy/TADA-A/cell_WES/DNM/simulation/org.rr.summary.rds&quot;)</span><br></pre></td></tr></table></figure>
+
+
+<pre><code>  ptv&gt;0.995        splice-ptv          mpc&gt;2           estim pr       
+Min.   :-3.046   Min.   :-1.305   Min.   :-5.4747   Min.   :0.005745  
+1st Qu.: 2.297   1st Qu.: 1.451   1st Qu.: 0.5679   1st Qu.:0.039856  
+Median : 2.923   Median : 1.857   Median : 0.9348   Median :0.062510  
+Mean   : 2.720   Mean   : 1.771   Mean   : 0.6039   Mean   :0.092598  
+3rd Qu.: 3.329   3rd Qu.: 2.141   3rd Qu.: 1.2976   3rd Qu.:0.086761  
+Max.   : 4.440   Max.   : 3.181   Max.   : 2.0051   Max.   :0.985894  </code></pre><p>Abnormal values may caused by a small number of risk genes (<code>risk g count</code>) with that annotation.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">library(readxl)</span><br><span class="line">f=read_xlsx(&quot;/storage11_7T/fuy/TADA-A/cell_WES/DNM/simulation/sub/res/sim_res.xlsx&quot;)</span><br><span class="line">colnames(f)[8]=&quot;overlp g&quot;</span><br><span class="line">f=f[order(f$mpc2),]</span><br><span class="line">head(f,3)</span><br></pre></td></tr></table></figure>
+
+
+<table>
+<caption>A tibble: 3 × 12</caption>
+<thead>
+    <tr><th scope="col">rd</th><th scope="col">annota</th><th scope="col">obs mut count</th><th scope="col">exp mut count</th><th scope="col">logBurden</th><th scope="col">risk g count</th><th scope="col">annota2</th><th scope="col">overlp g</th><th scope="col">ptv0.995</th><th scope="col">spidex_spliceai-ptv</th><th scope="col">mpc2</th><th scope="col">estim pr</th></tr>
+    <tr><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>dt17</td><td>mpc2               </td><td>62</td><td>60.67249</td><td>0.02164399</td><td> 6</td><td>ptv995             </td><td>0</td><td>2.592528</td><td>0.8751324</td><td>-5.474727</td><td>0.07493411</td></tr>
+    <tr><td>dt17</td><td>ptv995             </td><td>20</td><td>10.28819</td><td>0.66473607</td><td> 6</td><td>spidex_spliceai-ptv</td><td>0</td><td>2.592528</td><td>0.8751324</td><td>-5.474727</td><td>0.07493411</td></tr>
+    <tr><td>dt17</td><td>spidex_spliceai-ptv</td><td>64</td><td>57.85016</td><td>0.10102689</td><td>13</td><td>mpc2               </td><td>1</td><td>2.592528</td><td>0.8751324</td><td>-5.474727</td><td>0.07493411</td></tr>
+</tbody>
+</table>
+
+
+
+<h1 id="convergence-to-true-parameters-at-larger-sample-sizes-and-larger-effect-sizes"><a href="#convergence-to-true-parameters-at-larger-sample-sizes-and-larger-effect-sizes" class="headerlink" title="convergence to true parameters at larger sample sizes and larger effect sizes"></a>convergence to true parameters at larger sample sizes and larger effect sizes</h1><ul>
+<li><p>100 rounds of simulation</p>
+</li>
+<li><p>sample size=20000</p>
+</li>
+<li><p>logRR = 10, 9, 8,  prior = 0.05</p>
+</li>
+<li><p>initial values for optim:  c(runif(3,3,15),  runif(1,0,1))</p>
+</li>
+</ul>
+<h2 id="statistics-for-estimated-parameters"><a href="#statistics-for-estimated-parameters" class="headerlink" title="statistics for estimated parameters"></a>statistics for estimated parameters</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">readRDS(&quot;/storage11_7T/fuy/TADA-A/cell_WES/DNM/simulation/0818sim/org.rr.summary.rds&quot;)</span><br></pre></td></tr></table></figure>
+
+
+<pre><code>  ptv&gt;0.995        splice-ptv         mpc&gt;2         estim pi      
+Min.   : 9.973   Min.   :8.992   Min.   :7.950   Min.   :0.03650  
+1st Qu.: 9.995   1st Qu.:8.997   1st Qu.:7.984   1st Qu.:0.04140  
+Median :10.000   Median :8.999   Median :7.994   Median :0.04337  
+Mean   :10.000   Mean   :9.000   Mean   :7.996   Mean   :0.04343  
+3rd Qu.:10.006   3rd Qu.:9.003   3rd Qu.:8.006   3rd Qu.:0.04583  
+Max.   :10.019   Max.   :9.013   Max.   :8.030   Max.   :0.05029  </code></pre><p>no abnormal value; a larger number of risk genes with each annotation, e.g.,</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">f=read_xlsx(&quot;/storage11_7T/fuy/TADA-A/cell_WES/DNM/simulation/0818sim/sub/res/0818sim_res.xlsx&quot;)</span><br><span class="line">head(f,3)</span><br></pre></td></tr></table></figure>
+
+
+<table>
+<caption>A tibble: 3 × 12</caption>
+<thead>
+    <tr><th scope="col">rd</th><th scope="col">annota</th><th scope="col">obs mut count</th><th scope="col">exp mut count</th><th scope="col">logBurden</th><th scope="col">risk g count</th><th scope="col">annota2</th><th scope="col">overlp</th><th scope="col">ptv0.995</th><th scope="col">spidex_spliceai-ptv</th><th scope="col">mpc2</th><th scope="col">estim pr</th></tr>
+    <tr><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>dt1</td><td>mpc2               </td><td>6761227</td><td>202.24164</td><td>10.417252</td><td> 75</td><td>ptv995             </td><td>16</td><td>9.986159</td><td>8.993375</td><td>7.99933</td><td>0.04063152</td></tr>
+    <tr><td>dt1</td><td>ptv995             </td><td>  31183</td><td> 34.29395</td><td> 6.812659</td><td> 20</td><td>spidex_spliceai-ptv</td><td>20</td><td>9.986159</td><td>8.993375</td><td>7.99933</td><td>0.04063152</td></tr>
+    <tr><td>dt1</td><td>spidex_spliceai-ptv</td><td>6808209</td><td>192.83386</td><td>10.471811</td><td>235</td><td>mpc2               </td><td>73</td><td>9.986159</td><td>8.993375</td><td>7.99933</td><td>0.04063152</td></tr>
+</tbody>
+</table>
+
+
+
+<h2 id="fdr"><a href="#fdr" class="headerlink" title="fdr"></a>fdr</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">readRDS(&quot;/storage11_7T/fuy/TADA-A/cell_WES/DNM/simulation/0818sim/org.fdr.check.res.rds&quot;)</span><br><span class="line"># readRDS(&quot;/storage11_7T/fuy/TADA-A/cell_WES/DNM/simulation/0818sim/summary.fdr.check.res.rds&quot;)</span><br></pre></td></tr></table></figure>
+
+
+<table>
+<caption>A data.frame: 10 × 2</caption>
+<thead>
+    <tr><th scope="col">cutoff.lst</th><th scope="col">fdr.average</th></tr>
+    <tr><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>0.00</td><td>0.00000000</td></tr>
+    <tr><td>0.02</td><td>0.01787403</td></tr>
+    <tr><td>0.05</td><td>0.04781413</td></tr>
+    <tr><td>0.08</td><td>0.07768562</td></tr>
+    <tr><td>0.10</td><td>0.09793087</td></tr>
+    <tr><td>0.15</td><td>0.14818145</td></tr>
+    <tr><td>0.20</td><td>0.19850607</td></tr>
+    <tr><td>0.30</td><td>0.29898883</td></tr>
+    <tr><td>0.50</td><td>0.49947964</td></tr>
+    <tr><td>1.00</td><td>0.96111469</td></tr>
+</tbody>
+</table>
+
+
+
+<h1 id="FDR-calibration-under-feature-selection"><a href="#FDR-calibration-under-feature-selection" class="headerlink" title="FDR calibration under feature selection"></a>FDR calibration under feature selection</h1><ul>
+<li>10 features,  logRR= c(10,9,8,5,4,3,-8,-6,-3,-1)</li>
+<li>select 1:6 to perfrom joint estim</li>
+<li>100 rounds of simulation</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">readRDS(&quot;/storage11_7T/fuy/TADA-A/cell_WES/DNM/simulation/10annota_sim/org.sig.rr.summary.rds&quot;)</span><br></pre></td></tr></table></figure>
+
+
+<pre><code>  ptv&gt;0.995        splice-ptv         mpc&gt;2         annota4     
+Min.   : 9.585   Min.   :8.797   Min.   :7.139   Min.   :4.247  
+1st Qu.: 9.964   1st Qu.:8.940   1st Qu.:7.860   1st Qu.:4.563  
+Median :10.015   Median :8.992   Median :8.025   Median :4.689  
+Mean   :10.006   Mean   :8.991   Mean   :8.012   Mean   :4.699  
+3rd Qu.:10.060   3rd Qu.:9.049   3rd Qu.:8.217   3rd Qu.:4.879  
+Max.   :10.323   Max.   :9.120   Max.   :8.403   Max.   :5.219  
+   annota5         annota6           estim pi      
+Min.   :3.034   Min.   :-0.3537   Min.   :0.02795  
+1st Qu.:3.263   1st Qu.: 1.9511   1st Qu.:0.03261  
+Median :3.493   Median : 2.6265   Median :0.03416  
+Mean   :3.507   Mean   : 2.2810   Mean   :0.03401  
+3rd Qu.:3.757   3rd Qu.: 2.9690   3rd Qu.:0.03571  
+Max.   :4.064   Max.   : 3.1343   Max.   :0.04001  </code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">readRDS(&quot;/storage11_7T/fuy/TADA-A/cell_WES/DNM/simulation/10annota_sim/sig.org.fdr.check.res.rds&quot;)</span><br></pre></td></tr></table></figure>
+
+
+<table>
+<caption>A data.frame: 12 × 2</caption>
+<thead>
+    <tr><th scope="col">cutoff.lst</th><th scope="col">fdr.average</th></tr>
+    <tr><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>0.00</td><td>0.00000000</td></tr>
+    <tr><td>0.02</td><td>0.01303481</td></tr>
+    <tr><td>0.05</td><td>0.04314728</td></tr>
+    <tr><td>0.08</td><td>0.07325138</td></tr>
+    <tr><td>0.10</td><td>0.09291694</td></tr>
+    <tr><td>0.15</td><td>0.14364696</td></tr>
+    <tr><td>0.20</td><td>0.19338758</td></tr>
+    <tr><td>0.30</td><td>0.29221063</td></tr>
+    <tr><td>0.50</td><td>0.49273081</td></tr>
+    <tr><td>0.70</td><td>0.69554809</td></tr>
+    <tr><td>0.90</td><td>0.89860055</td></tr>
+    <tr><td>1.00</td><td>0.98029115</td></tr>
+</tbody>
+</table>
+
+
+
+<h1 id="CHD-res-PTV-0-0-5-estim-logRR-in-the-joint-model-8"><a href="#CHD-res-PTV-0-0-5-estim-logRR-in-the-joint-model-8" class="headerlink" title="CHD res, PTV 0-0.5, estim logRR in the joint model = -8"></a>CHD res, PTV 0-0.5, estim logRR in the joint model = -8</h1><p>ptv 0-0.05 observed mutation=70, expected =49, burden=1.43, 但这些变异所在的基因FDR都大于0.98 (using all SNV annotations)，因此在joint estim中effect size≈0</p>
+<h1 id="Test-if-feature-selection-inflates-the-FDR"><a href="#Test-if-feature-selection-inflates-the-FDR" class="headerlink" title="Test if feature selection inflates the FDR"></a>Test if feature selection inflates the FDR</h1><ul>
+<li>It seems no inflation occured.</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">type=c(&quot;CHD select features&quot;,&quot;ASD select features&quot;,&quot;30 annota without selection&quot;)</span><br><span class="line">num_risk_g_snv = c(19,18,20)</span><br><span class="line">num_risk_g_snv_indel = c(33,31,33)</span><br><span class="line">frameshift_logRR=c(3.97,3.96,3.95)</span><br><span class="line">estim_prior = c(0.022,0.022,0.023)</span><br><span class="line">gene_desc=c(&quot;baseline&quot;,&quot;1 diff gene&quot;,&quot;2 diff genes&quot;)</span><br><span class="line">df=data.frame(type,num_risk_g_snv,num_risk_g_snv_indel,estim_prior,gene_desc)</span><br><span class="line">saveRDS(df,&quot;/storage11_7T/fuy/TADA-A/CHD/cross_valid_CHD_annota.rds&quot;)</span><br><span class="line">df</span><br></pre></td></tr></table></figure>
+
+
+<table>
+<caption>A data.frame: 3 × 5</caption>
+<thead>
+    <tr><th scope="col">type</th><th scope="col">num_risk_g_snv</th><th scope="col">num_risk_g_snv_indel</th><th scope="col">estim_prior</th><th scope="col">gene_desc</th></tr>
+    <tr><th scope="col">&lt;fct&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;fct&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>CHD select features        </td><td>19</td><td>33</td><td>0.022</td><td>baseline    </td></tr>
+    <tr><td>ASD select features        </td><td>18</td><td>31</td><td>0.022</td><td>1 diff gene </td></tr>
+    <tr><td>30 annota without selection</td><td>20</td><td>33</td><td>0.023</td><td>2 diff genes</td></tr>
+</tbody>
+</table>
+
+
+
+<h1 id="RBP-GWAS-annotation"><a href="#RBP-GWAS-annotation" class="headerlink" title="RBP_GWAS annotation"></a>RBP_GWAS annotation</h1><p>results of CHD|ASD|DD: <a href="https://yfu1116.github.io/project/2021-08-26-all-RR/">https://yfu1116.github.io/project/2021-08-26-all-RR/</a></p>
+<h1 id="numbers-of-risk-genes"><a href="#numbers-of-risk-genes" class="headerlink" title="numbers of risk genes"></a>numbers of risk genes</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">readRDS(&quot;/storage11_7T/fuy/TADA-A/num_of_risk_g_ASD_CHD_DD.rds&quot;)</span><br></pre></td></tr></table></figure>
+
+
+<table>
+<caption>A data.frame: 3 × 7</caption>
+<thead>
+    <tr><th scope="col">type</th><th scope="col">sample_size</th><th scope="col">baseline(MPC+PTV)</th><th scope="col">all_snv</th><th scope="col">estim_pi</th><th scope="col">frameshift_logRR</th><th scope="col">indel+snv</th></tr>
+    <tr><th scope="col">&lt;fct&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>CHD</td><td> 2645</td><td> 12</td><td> 22</td><td>0.021</td><td>3.97</td><td> 33</td></tr>
+    <tr><td>ASD</td><td> 6430</td><td> 54</td><td> 86</td><td>0.168</td><td>2.58</td><td>170</td></tr>
+    <tr><td>DD </td><td>31058</td><td>391</td><td>495</td><td>0.101</td><td>2.77</td><td>507</td></tr>
+</tbody>
+</table>
+
+
+
+<h1 id="Assess-new-genes"><a href="#Assess-new-genes" class="headerlink" title="Assess new genes"></a>Assess new genes</h1><h2 id="literature-search"><a href="#literature-search" class="headerlink" title="literature search"></a>literature search</h2><h2 id="network-analysis"><a href="#network-analysis" class="headerlink" title="network analysis"></a>network analysis</h2><p>Functional enrichments in 33 genes’ network:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">setwd(&quot;/storage11_7T/fuy/TADA-A/CHD/33string&quot;)</span><br><span class="line">library(data.table)</span><br><span class="line">f=fread(&quot;33BP.tsv&quot;)[,-7]</span><br><span class="line">head(f)</span><br></pre></td></tr></table></figure>
+
+
+<table>
+<caption>A data.table: 6 × 7</caption>
+<thead>
+    <tr><th scope="col">#term ID</th><th scope="col">term description</th><th scope="col">observed gene count</th><th scope="col">background gene count</th><th scope="col">strength</th><th scope="col">false discovery rate</th><th scope="col">matching proteins in your network (labels)</th></tr>
+    <tr><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;chr&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>GO:0007507</td><td>heart development                           </td><td>10</td><td> 522</td><td>1.06</td><td>0.00017</td><td>RAF1,SMAD2,NOTCH1,TSC1,ROCK2,PTPN11,CTNNB1,PTEN,SOS1,CHD7                                       </td></tr>
+    <tr><td>GO:0010628</td><td>positive regulation of gene expression      </td><td>17</td><td>2337</td><td>0.63</td><td>0.00017</td><td>IAPP,RAF1,FLT4,SMAD2,NOTCH1,MYRF,NAA15,KMT2D,ROCK2,PTPN11,CTNNB1,ACTB,RPL5,PTEN,AKAP12,CHD7,NSD1</td></tr>
+    <tr><td>GO:0043410</td><td>positive regulation of MAPK cascade         </td><td>10</td><td> 543</td><td>1.04</td><td>0.00017</td><td>IAPP,RAF1,FLT4,NOTCH1,ROCK2,PTPN11,CTNNB1,PTEN,AKAP12,GPBAR1                                    </td></tr>
+    <tr><td>GO:0060322</td><td>head development                            </td><td>11</td><td> 788</td><td>0.92</td><td>0.00017</td><td>RAF1,NOTCH1,TSC1,DSCAML1,PTPN11,CTNNB1,ACTB,PTEN,SOS1,CHD7,RBFOX2                               </td></tr>
+    <tr><td>GO:0070374</td><td>positive regulation of ERK1 and ERK2 cascade</td><td> 7</td><td> 209</td><td>1.30</td><td>0.00017</td><td>IAPP,FLT4,NOTCH1,PTPN11,PTEN,AKAP12,GPBAR1                                                      </td></tr>
+    <tr><td>GO:0070848</td><td>response to growth factor                   </td><td>10</td><td> 524</td><td>1.05</td><td>0.00017</td><td>RAF1,FLT4,SMAD2,NOTCH1,ROCK2,PTPN11,CTNNB1,PTEN,SOS1,RBFOX2                                     </td></tr>
+</tbody>
+</table>
+
+
+
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">k=fread(&quot;33diseases.tsv&quot;)[,-7]</span><br><span class="line">k</span><br></pre></td></tr></table></figure>
+
+
+<table>
+<caption>A data.table: 24 × 7</caption>
+<thead>
+    <tr><th scope="col">#term ID</th><th scope="col">term description</th><th scope="col">observed gene count</th><th scope="col">background gene count</th><th scope="col">strength</th><th scope="col">false discovery rate</th><th scope="col">matching proteins in your network (labels)</th></tr>
+    <tr><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;chr&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>DOID:3490   </td><td>Noonan syndrome                         </td><td> 5</td><td>  24</td><td>2.09</td><td>4.92e-06</td><td>LZTR1,RAF1,RASA2,PTPN11,SOS1                                                </td></tr>
+    <tr><td>DOID:0080690</td><td>RASopathy                               </td><td> 5</td><td>  30</td><td>1.99</td><td>6.67e-06</td><td>LZTR1,RAF1,RASA2,PTPN11,SOS1                                                </td></tr>
+    <tr><td>DOID:0060085</td><td>Organ system benign neoplasm            </td><td> 7</td><td> 215</td><td>1.29</td><td>1.00e-04</td><td>LZTR1,TSC1,CTNNB1,ACTB,PTEN,SOS1,CYP21A2                                    </td></tr>
+    <tr><td>DOID:0060115</td><td>Nervous system benign neoplasm          </td><td> 4</td><td>  29</td><td>1.91</td><td>2.30e-04</td><td>LZTR1,TSC1,CTNNB1,PTEN                                                      </td></tr>
+    <tr><td>DOID:14291  </td><td>Noonan syndrome with multiple lentigines</td><td> 3</td><td>   6</td><td>2.47</td><td>2.60e-04</td><td>RAF1,PTPN11,SOS1                                                            </td></tr>
+    <tr><td>DOID:305    </td><td>Carcinoma                               </td><td> 6</td><td> 269</td><td>1.12</td><td>3.60e-03</td><td>RAF1,NOTCH1,TSC1,CTNNB1,ACTB,PTEN                                           </td></tr>
+    <tr><td>DOID:0060090</td><td>Central nervous system benign neoplasm  </td><td> 3</td><td>  20</td><td>1.95</td><td>4.10e-03</td><td>TSC1,CTNNB1,PTEN                                                            </td></tr>
+    <tr><td>DOID:4079   </td><td>Heart valve disease                     </td><td> 3</td><td>  23</td><td>1.89</td><td>5.30e-03</td><td>NOTCH1,PTPN11,SOS1                                                          </td></tr>
+    <tr><td>DOID:12270  </td><td>Coloboma                                </td><td> 4</td><td>  84</td><td>1.45</td><td>6.10e-03</td><td>CRIM1,KMT2D,ACTB,CHD7                                                       </td></tr>
+    <tr><td>DOID:0050686</td><td>Organ system cancer                     </td><td> 8</td><td> 722</td><td>0.82</td><td>6.90e-03</td><td>RAF1,NOTCH1,TSC1,KMT2D,PTPN11,CTNNB1,ACTB,PTEN                              </td></tr>
+    <tr><td>DOID:162    </td><td>Cancer                                  </td><td> 9</td><td> 951</td><td>0.75</td><td>6.90e-03</td><td>RAF1,NOTCH1,TSC1,KMT2D,PTPN11,CTNNB1,ACTB,PTEN,NSD1                         </td></tr>
+    <tr><td>DOID:18     </td><td>Urinary system disease                  </td><td> 6</td><td> 329</td><td>1.03</td><td>6.90e-03</td><td>RAF1,SMAD2,TSC1,KMT2D,CTNNB1,PTEN                                           </td></tr>
+    <tr><td>DOID:3996   </td><td>Urinary system cancer                   </td><td> 4</td><td>  89</td><td>1.43</td><td>6.90e-03</td><td>RAF1,KMT2D,CTNNB1,PTEN                                                      </td></tr>
+    <tr><td>DOID:863    </td><td>Nervous system disease                  </td><td>13</td><td>2157</td><td>0.55</td><td>7.00e-03</td><td>LZTR1,NOTCH1,CRIM1,NAA15,TSC1,KMT2D,KIAA0196,COPB2,CTNNB1,ACTB,PTEN,CHD7,GAN</td></tr>
+    <tr><td>DOID:6420   </td><td>Pulmonary valve stenosis                </td><td> 2</td><td>   3</td><td>2.60</td><td>7.40e-03</td><td>PTPN11,SOS1                                                                 </td></tr>
+    <tr><td>DOID:3165   </td><td>Skin benign neoplasm                    </td><td> 3</td><td>  33</td><td>1.73</td><td>7.60e-03</td><td>CTNNB1,ACTB,SOS1                                                            </td></tr>
+    <tr><td>DOID:0050469</td><td>Costello syndrome                       </td><td> 2</td><td>   4</td><td>2.47</td><td>9.30e-03</td><td>PTPN11,SOS1                                                                 </td></tr>
+    <tr><td>DOID:11054  </td><td>Urinary bladder cancer                  </td><td> 3</td><td>  40</td><td>1.65</td><td>1.06e-02</td><td>RAF1,KMT2D,PTEN                                                             </td></tr>
+    <tr><td>DOID:1749   </td><td>Squamous cell carcinoma                 </td><td> 3</td><td>  45</td><td>1.60</td><td>1.34e-02</td><td>RAF1,NOTCH1,PTEN                                                            </td></tr>
+    <tr><td>DOID:4159   </td><td>Skin cancer                             </td><td> 3</td><td>  51</td><td>1.54</td><td>1.83e-02</td><td>RAF1,CTNNB1,ACTB                                                            </td></tr>
+    <tr><td>DOID:3118   </td><td>Hepatobiliary disease                   </td><td> 4</td><td> 153</td><td>1.19</td><td>2.25e-02</td><td>NOTCH1,TSC1,CTNNB1,PTEN                                                     </td></tr>
+    <tr><td>DOID:0060037</td><td>Developmental disorder of mental health </td><td> 6</td><td> 512</td><td>0.84</td><td>2.83e-02</td><td>NAA15,KMT2D,KIAA0196,CTNNB1,ACTB,PTEN                                       </td></tr>
+    <tr><td>DOID:0080355</td><td>Hepatobiliary system cancer             </td><td> 3</td><td>  63</td><td>1.45</td><td>2.83e-02</td><td>TSC1,CTNNB1,PTEN                                                            </td></tr>
+    <tr><td>DOID:5520   </td><td>Head and neck squamous cell carcinoma   </td><td> 2</td><td>  10</td><td>2.07</td><td>2.83e-02</td><td>NOTCH1,PTEN                                                                 </td></tr>
+</tbody>
+</table>
+
+
+
+<p>using 76 CHD risk genes (FDR &lt; 0.3) to perform network analysis, with minimum required interaction score = 0.9.</p>
+<p><code>blue</code>: known CHD genes, <code>yellow</code>: the unknow</p>
+<p><img src= "/project/img/loading.gif" data-lazy-src="https://z3.ax1x.com/2021/09/03/h6KaB8.png" alt="h6KaB8.png"></p>
+<p>10 hub genes,<br><code>blue</code>: known CHD genes<br><code>yellow</code>: FDR &lt; 0.3<br><code>orange</code>: FDR &lt; 0.1</p>
+<p><img src= "/project/img/loading.gif" data-lazy-src="https://z3.ax1x.com/2021/09/03/h6ZqRP.jpg" alt="h6ZqRP.jpg"></p>
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined" target="_blank" rel="noopener"></a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://yfu1116.github.io/project/2021-09-06-tadaA-report/">https://yfu1116.github.io/project/2021-09-06-tadaA-report/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" data-sites="github,email,facebook,twitter,weixin,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/project/2021-08-26-all-RR/"><img class="next-cover" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="onerror=null;src='/project/img/404.jpg'"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">2021-08-26-all-RR</div></div></a></div></nav></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By </div><div class="framework-info"><span>Framework </span><a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener">Butterfly</a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="font_plus" type="button" title="Increase Font Size"><i class="fas fa-plus"></i></button><button id="font_minus" type="button" title="Decrease Font Size"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></section><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/project/js/utils.js"></script><script src="/project/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    loader: {
+      source: {
+        '[tex]/amsCd': '[tex]/amscd'
+      }
+    },
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, '']
+      }
+    }
+  }
+  
+  var script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></div></body></html>
